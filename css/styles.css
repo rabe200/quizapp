@@ -1,25 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-
-main {
-    display: flex;
-    align-items: flex-start;
-}
-
-.bookmark {
-    transform: scale(10%);
-}
-
-.titlebar {
-   
-
-    background-color: rgb(164, 228, 228);
-
-}
-
-.question-card {
-    display: flex;
-    
-    flex-direction: column;
+h1 {
+ text-align: center;
+ background-color: black;
+ color: white;
 }
