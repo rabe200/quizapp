@@ -2,24 +2,16 @@
     box-sizing: border-box;
 }
 
-main {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
     display: flex;
-    align-items: flex-start;
-}
-
-.bookmark {
-    transform: scale(10%);
-}
-
-.titlebar {
-   
-
-    background-color: rgb(164, 228, 228);
-
-}
-
-.question-card {
-    display: flex;
-    
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ background-color: black;
+ color: white;
+ margin: 0%;
 }
