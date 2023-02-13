@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
@@ -12,56 +10,52 @@ header {
     font-size: large;
 }
 
-body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-h1 {
-margin: 0;
-} 
-
 h2 {
-margin: 0 10% 0;
+    background-color: rgb(248, 173, 255);
 padding-bottom: 12px;
 }
 
 .Question-Card {
     position: relative;
-    /* display: flex; */
-    border: 10px solid rgb(0, 238, 255);
-    /* flex-direction: column; */
-    padding: 10px;
-    margin: 10px;
-    /* position: relative; */
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 ul {
     list-style-type: none;
     display: flex;
-    gap: 1%;
+    gap: 1px;
+    flex-wrap: wrap;
 }
-
-li {
-    /* border: 1px solid deeppink; */
-}
-
 
 .bookmark {
 
 position: absolute;
-  top: 0px;
-  right: 0px;
-  /* border: 2px solid #ff4a11; */
-
+  top: 0%;
+  right: 0%;
 }
 
-button {
+.button1 {
+   border-radius: 15%;
+   background-color: rgb(243, 222, 184);
+   border: 5px beige solid;
+   }
+
+footer {
+    position:fixed;
+    bottom: 0px;
+    background-color: rgb(20, 247, 255);
+    width: 100vw;
+    
+}
+
+.navbar {
     display: flex;
     justify-content: center;
-    align-content: center;
-    /* border: 1px solid red; */
-    margin: 0 30% 0;
-    padding: 6px;
+}
+
+.imgfooter { 
+    width: 50px;
 }
