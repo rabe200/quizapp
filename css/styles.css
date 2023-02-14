@@ -1,5 +1,8 @@
+@import "profile.css";
+
+
 * {
-  box-sizing: border-box;
+      box-sizing: border-box;
 }
 
 body {
@@ -39,9 +42,8 @@ border: 51px rgb(205, 230, 205) solid;
 border-bottom: 1px;
 }
 
-.Question-Card {
+.Card {
     position: relative;
-    /* border: 0px solid rgb(159, 237, 236) solid; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -50,72 +52,84 @@ border-bottom: 1px;
     width: 91vw;
 }
 
-ul {
-    list-style-type: none;
+.Card__button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    }
+
+.Card__button:hover {
+    color: black;
+    background-color: white;
+}
+
+.Card__ul {
     display: flex;
     gap: 1;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
-.bookmark {
-width: 10%;
-position: absolute;
-  top: 0%;
-  right: 1%;
-}
-
-.bookmark:hover {
-    background-color: coral;
-    border-radius: 66%;
+.Card__bookmark {
     width: 10%;
-    right: -3%;
-    transform: scale(75%);
+    position: absolute;
+      top: 0%;
+      right: 1%;
+      content: url(/img/star.png);
+    }
+    
+    .Card__bookmark:hover {
+        content: url(/img/bookmarked.png);
+    }
+
+.Card__bookmark--bookmarked {
+    width: 10%;
+    position: absolute;
+      top: 0%;
+      right: 1%;
+    content: url(/img/bookmarked.png)
 }
 
-.button1 {
-   background-color: black;
-   COLOR:white;
-   }
+.Card__bookmark--bookmarked:hover {
+    width: 10%;
+    position: absolute;
+      top: 0%;
+      right: 1%;
+    content: url(/img/star.png)
+}
 
-   .button1:hover {
-    background-color: white;
-    color: black;
-    font-size: larger;
-   }
 
-footer {
-    position: sticky;
+.Card_li {
+    border: 5px solid lime;
+}
+.Navbar {
+    position: absolute;
     bottom: 0;
+    left: 20vw;
 }
 
-.navbutton {
+.Navbar__ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.Navbar__li {
+    display: flex;
+    flex-direction: column;
+}
+
+.Navbar__button {
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
-  
+    border: none;
 }
 
-.navbar {
-      display: flex;
-     justify-content: center;
-}
-
-.navbutton:hover{
+.Navbar__button:hover {
     background-color: aqua;
 }
 
-/* STYLING PROFILE PAGE */
-
-.buttonlist {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 100px;
+.Navbar__img {
+    background-color: transparent;
 }
 
-body.dark {
-    background-color: rgb(0, 18, 77);
-    color: white;
-}
 
-.main2 {
-    margin: 200px;
-}

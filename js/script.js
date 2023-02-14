@@ -1,13 +1,12 @@
-console.clear();
+// console.clear();
 
 const bodyElement = document.querySelector('[data-js="body"]');
 
-const darkMode = document.querySelector('[data-js="darkmode-button"]');
-    darkMode.addEventListener("click", () => {
-        console.log("darkmode-button selected");
-        bodyElement.classList.add("dark");
-    });
-
+const darkMode = document.querySelector('[data-js="darkmode--button"]');
+darkMode.addEventListener("click", () => {
+    console.log("dark-mode-button selected");
+    bodyElement.classList.add("dark");
+});
 
 const lightMode = document.querySelector('[data-js="lightmode-button"]');
     lightMode.addEventListener("click", () => {
