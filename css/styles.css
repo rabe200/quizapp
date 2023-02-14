@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25vw;
 }
 
 main {
@@ -54,7 +55,7 @@ border-bottom: 1px;
 
 .Card__button {
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(112, 97, 97);
     }
 
 .Card__button:hover {
@@ -102,7 +103,7 @@ border-bottom: 1px;
     border: 5px solid lime;
 }
 .Navbar {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 20vw;
 }
@@ -124,8 +125,23 @@ border-bottom: 1px;
     border: none;
 }
 
+.Navbar__button--star {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+}
+
+.Navbar__button--star:hover {
+    content:url(/img/bookmarked.png);
+    background-color: aqua;
+    border-radius: 50%;
+}
+
 .Navbar__button:hover {
     background-color: aqua;
+    border-radius: 50%;
+    border: 4px coral solid;
 }
 
 .Navbar__img {

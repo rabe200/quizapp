@@ -9,16 +9,18 @@
 
 }
 
-.Buttonlist_button {
-    border: 12px red solid;
+.Buttonlist__button {
+background-color: black;
+    color:white;
 }
 
-.Buttonlist_button:hover {
+.Buttonlist__button:hover {
     background-color: aqua;
+    color: rgb(124, 0, 124);
 }
 
 body.dark {
-    background-color: rgb(0, 18, 77);
+    background-color: rgb(62, 0, 77);
     color: white;
 }
 
