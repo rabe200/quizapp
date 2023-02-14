@@ -102,10 +102,16 @@ border-bottom: 1px;
 .Card_li {
     border: 5px solid lime;
 }
+
+footer {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
 .Navbar {
     position: fixed;
     bottom: 0;
-    left: 20vw;
 }
 
 .Navbar__ul {
