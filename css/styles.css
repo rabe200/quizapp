@@ -101,3 +101,29 @@ footer {
 .navbutton:hover{
     background-color: aqua;
 }
+
+/* STYLING PROFILE PAGE */
+
+.buttonlist {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+.button--light {
+
+}
+
+.button--dark {
+
+}
+
+.button--toggle {
+
+}
