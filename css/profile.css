@@ -1,0 +1,29 @@
+/* STYLING PROFILE PAGE */
+
+.Buttonlist {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 0;
+    list-style-type: none;
+
+}
+
+.Buttonlist__button {
+background-color: black;
+    color:white;
+}
+
+.Buttonlist__button:hover {
+    background-color: aqua;
+    color: rgb(124, 0, 124);
+}
+
+body.dark {
+    background-color: rgb(62, 0, 77);
+    color: white;
+}
+
+.main2 {
+    margin: 200px;
+}

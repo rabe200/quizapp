@@ -7,27 +7,56 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>magic Quiz</title>
 </head>
+<!-- ENDE HEAD -->
 
 <body data-js="body">
-    
+    <main>
         <h1>magick riddle</h1>
    
 
-    
+    <ul class="Buttonlist">
         
-     <button class="button button--dark" data-js=darkmode--button>
+     <li class="Buttonlist__li"><button class="Buttonlist__button" data-js="darkmode--button">
         DARKMODE ON
-    </button>
+    </button></li>
     
-    <button class="button button--light" data-js="lightmode-button">
+    <li class="Buttonlist__li"><button class="Buttonlist__button" data-js="lightmode-button">
         DARKMODE OFF
-    </button>
+    </button></li>
     
-    <button class="button button--toggle" data-js="darkmode-toggle">
+    <li class="Buttonlist__li"><button class="Buttonlist__button" data-js="darkmode-toggle">
         DARKMODE TOGGLE
+    </button></li>
+</ul>
+</main>
+
+<!-- ENDE MAIN -->
+<footer> 
+    <section class="Navbar">
+        <ul class="Navbar__ul">
+   <li class="Navbar__li">
+    <button class="Navbar__button">
+        <img class="Navbar__image" src="img/home.png" onclick=location.href="index.html">
     </button>
-    
-   
+</li>
+
+   <li class="Navbar__li">
+    <button class="Navbar__button--star" onclick=location.href="bookmark.html">
+        <img class="Navbar__img" src="img/star.png">
+    </button>
+</li>
+
+   <li class="Navbar__li">
+    <button class="Navbar__button" onclick=location.href="/profile.html">
+        <img class="Navbar__img" src="img/profilpicture.png">
+        
+    </button>
+</li>
+
+</ul>
+</section>
+</footer>
+
 
 </body>
 

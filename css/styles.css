@@ -1,11 +1,15 @@
+@import "profile.css";
+
+
 * {
-  box-sizing: border-box;
+      box-sizing: border-box;
 }
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25vw;
 }
 
 main {
@@ -39,9 +43,8 @@ border: 51px rgb(205, 230, 205) solid;
 border-bottom: 1px;
 }
 
-.Question-Card {
+.Card {
     position: relative;
-    /* border: 0px solid rgb(159, 237, 236) solid; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -50,72 +53,105 @@ border-bottom: 1px;
     width: 91vw;
 }
 
-ul {
-    list-style-type: none;
+.Card__button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(112, 97, 97);
+    }
+
+.Card__button:hover {
+    color: black;
+    background-color: white;
+}
+
+.Card__ul {
     display: flex;
     gap: 1;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
-.bookmark {
-width: 10%;
-position: absolute;
-  top: 0%;
-  right: 1%;
-}
-
-.bookmark:hover {
-    background-color: coral;
-    border-radius: 66%;
+.Card__bookmark {
     width: 10%;
-    right: -3%;
-    transform: scale(75%);
+    position: absolute;
+      top: 0%;
+      right: 1%;
+      content: url(/img/star.png);
+    }
+    
+    .Card__bookmark:hover {
+        content: url(/img/bookmarked.png);
+    }
+
+.Card__bookmark--bookmarked {
+    width: 10%;
+    position: absolute;
+      top: 0%;
+      right: 1%;
+    content: url(/img/bookmarked.png)
 }
 
-.button1 {
-   background-color: black;
-   COLOR:white;
-   }
+.Card__bookmark--bookmarked:hover {
+    width: 10%;
+    position: absolute;
+      top: 0%;
+      right: 1%;
+    content: url(/img/star.png)
+}
 
-   .button1:hover {
-    background-color: white;
-    color: black;
-    font-size: larger;
-   }
+
+.Card_li {
+    border: 5px solid lime;
+}
 
 footer {
-    position: sticky;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.Navbar {
+    position: fixed;
     bottom: 0;
 }
 
-.navbutton {
-    background-color: transparent;
-  
+.Navbar__ul {
+    display: flex;
+    list-style-type: none;
 }
 
-.navbar {
-      display: flex;
-     justify-content: center;
-}
-
-.navbutton:hover{
-    background-color: aqua;
-}
-
-/* STYLING PROFILE PAGE */
-
-.buttonlist {
+.Navbar__li {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
-body.dark {
-    background-color: rgb(0, 18, 77);
-    color: white;
+.Navbar__button {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
 }
 
-.main2 {
-    margin: 200px;
+.Navbar__button--star {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
 }
+
+.Navbar__button--star:hover {
+    content:url(/img/bookmarked.png);
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.Navbar__button:hover {
+    background-color: aqua;
+    border-radius: 50%;
+    border: 4px coral solid;
+}
+
+.Navbar__img {
+    background-color: transparent;
+}
+
+
